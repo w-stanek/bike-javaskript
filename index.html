@@ -14,6 +14,7 @@
 <body>
     <div class="container my-2 w-75 col-lg-4 offset-lg-4 col-md-6 offset-md-3">
         <form class="border rounded pt-4 pb-2 px-4" action="" name="kolo">
+            <h3 class="text-center">Půjčovna kol</h3>
             <div class="form-group">
                 <label for="horske">horske +500kc</label>
                 <div class="input-group text-center">
@@ -22,7 +23,7 @@
                             <input type="checkbox" name="horskekolo" value="500">
                         </div>
                     </div>
-                    <input class="form-control" type="text" name="horskeKs" value=1>
+                    <input class="form-control form-control-sm" type="number" name="horskeKs" value=1 oninput="handleBikeNumber(this)">
                 </div>
             </div>
             <div class="form-group">
@@ -34,7 +35,7 @@
                             <input type="checkbox" name="detskekolo" value="200">
                         </div>
                     </div>
-                    <input class="form-control" type="text" name="detskeKs" value=1>
+                    <input class="form-control form-control-sm" type="number" name="detskeKs" value=1  oninput="handleBikeNumber(this)">
                 </div>
             </div>
             <div class="form-group">
@@ -46,7 +47,7 @@
                             <input type="checkbox" name="silnicnikolo" value="1500">
                         </div>
                     </div>
-                    <input class="form-control" type="text" name="silnicniKs" value=1>
+                    <input class="form-control form-control-sm" type="number" name="silnicniKs" value=1 oninput="handleBikeNumber(this)">
                 </div>
             </div>
             <div class="form-group">
@@ -58,7 +59,7 @@
                             <input type="checkbox" name="gravelkolo" value="2500">
                         </div>
                     </div>
-                    <input class="form-control" type="text" name="gravelKs" value=1>
+                    <input class="form-control form-control-sm" type="number" name="gravelKs" value=1 oninput="handleBikeNumber(this)">
                 </div>
             </div>
             <hr>
@@ -87,19 +88,19 @@
             <hr>
             <div class="form-group">
                 <label for="email">email</label>
-                <input class="form-control" type="email" name="email" value="@" onclick="handleMailInput(event)">
+                <input class="form-control form-control-sm" type="email" name="email" value="@" onclick="handleMailInput(event)">
             </div>
             <div class="form-group">
                 <label for="cena">celkova cena</label>
-                <input class="form-control" type="text" name="cena" value="" readonly>
+                <input class="form-control form-control-sm" type="text" name="cena" value="" readonly>
             </div>
             <div class="form-group">
                 <label for="kolik">Kolik jsi ochotny zaplatit</label>
-                <input class="form-control" type="text" name="kolik">
+                <input class="form-control form-control-sm" type="text" name="kolik">
             </div>
             <div class="form-group">
                 <label for="vLimitu" class="sr-only"></label>
-                <input class="form-control" type="text" name="vLimitu" value="" readonly>
+                <input class="form-control form-control-sm" type="text" name="vLimitu" value="" readonly>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-secondary" onclick="submitMail(event)">Odeslat</button>

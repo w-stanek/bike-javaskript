@@ -4,6 +4,11 @@ let typs = 0;
 let typg = 0;
 let ext = 1;
 let dny = 1;
+function handleBikeNumber(ev){
+    let InputVal = ev.value;
+    if(InputVal <=0)
+        ev.value = 1;
+}
 
 function horske() {
     let val = parseInt(kolo.horskekolo.value);
@@ -79,7 +84,7 @@ function sum(event) {
             document.kolo.vLimitu.value = "nezadal jsi kolik chces zaplatit";
     }
     else
-        document.kolo.vLimitu.value = "neni co pocitat";
+        document.kolo.vLimitu.value = "zadej svuj limit";
     console.log(`total ${total}`);
 }
 
@@ -91,7 +96,7 @@ function submitMail(event) {
     document.kolo.email.value = 'Zadejte validni mail'
 }
 
-function handleMailInput(event){
+function handleMailInput(){
     if(document.kolo.email.value !='@')
     document.kolo.email.value ="";
 }
