@@ -76,15 +76,15 @@ function sum(event) {
     if (isPrice) {
         if (limit != 0) {
             if (limit >= total)
-                document.kolo.vLimitu.value = "vejdes se do limitu";
+                document.kolo.vLimitu.value = "vejdeš se do limitu";
             else
-                document.kolo.vLimitu.value = "nevejdes se do limitu";
+                document.kolo.vLimitu.value = "nevejdeš se do limitu";
         }
         else
-            document.kolo.vLimitu.value = "nezadal jsi kolik chces zaplatit";
+            document.kolo.vLimitu.value = "nezadal jsi kolik chceš zaplatit";
     }
     else
-        document.kolo.vLimitu.value = "zadej svuj limit";
+        document.kolo.vLimitu.value = "zadej svůj limit";
     console.log(`total ${total}`);
 }
 
@@ -92,8 +92,8 @@ function submitMail(event) {
     event.preventDefault()
     mail = document.kolo.email.value;
     if (validation(mail))
-        alert('Objednavka odeslana')
-    document.kolo.email.value = 'Zadejte validni mail'
+        alert('Objednávka odeslána')
+    document.kolo.email.value = 'Zadejte validní email'
 }
 
 function handleMailInput(){

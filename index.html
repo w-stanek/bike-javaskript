@@ -16,7 +16,7 @@
         <form class="border rounded pt-4 pb-2 px-4" action="" name="kolo">
             <h3 class="text-center">Půjčovna kol</h3>
             <div class="form-group">
-                <label for="horske">horske +500kc</label>
+                <label for="horske">horské +500kč</label>
                 <div class="input-group text-center">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="double">detske +200kc</label>
+                <label for="double">dětské +200kč</label>
 
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="double">silnicni +1500kc</label>
+                <label for="double">silniční +1500kč</label>
                 <div class="input-group">
 
                     <div class="input-group-prepend">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="gravel">gravel +2500</label>
+                <label for="gravel">gravel +2500kč</label>
 
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -64,7 +64,7 @@
             </div>
             <hr>
             <div class="form-group">
-                <label for="pocetDnu">Vyber na kolik dni chces kolo pujcit</label>
+                <label for="pocetDnu">Vyber na kolik dní chceš kolo půjčit</label>
                 <select name="pocetDnu" id="dny" onchange="den(this)">
                     <option value="1" selected>1</option>
                     <option value="2">2</option>
@@ -75,15 +75,15 @@
             <hr>
                     <div class="form-check form-check-inline text-sm-left">
                         <input class="form-check-input" type="radio" name="typ" value="1.05" oninput="extra(typ)">
-                        <label class="form-check-label" for="typ">cyklonosic stresni + 5procent</label>
+                        <label class="form-check-label" for="typ">cyklonosič střešní +5 procent</label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="typ" value="1.1" oninput="extra(typ)">
-                        <label class="form-check-label" for="typ">cyklonosic na tazne +10procent</label>
+                        <label class="form-check-label" for="typ">cyklonosič na tažné +10 procent</label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="typ" value="1" oninput="extra(typ)">
-                        <label class="form-check-label" for="typ">bez cyklonosice</label>
+                        <label class="form-check-label" for="typ">bez cyklonosiče</label>
                     </div>
             <hr>
             <div class="form-group">
@@ -91,11 +91,11 @@
                 <input class="form-control form-control-sm" type="email" name="email" value="@" onclick="handleMailInput(event)">
             </div>
             <div class="form-group">
-                <label for="cena">celkova cena</label>
+                <label for="cena">celková cena</label>
                 <input class="form-control form-control-sm" type="text" name="cena" value="" readonly>
             </div>
             <div class="form-group">
-                <label for="kolik">Kolik jsi ochotny zaplatit</label>
+                <label for="kolik">Kolik jsi ochotný zaplatit</label>
                 <input class="form-control form-control-sm" type="text" name="kolik">
             </div>
             <div class="form-group">
@@ -109,5 +109,4 @@
     </div>
     </form>
 </body>
-
 </html>
